@@ -1,0 +1,84 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #000000;
+    scroll-behavior: smooth;
+  }
+  
+  
+  header {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content:center;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+  }
+
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+  }
+  
+  nav .logo {
+    font-size: 50px;
+    font-family: 'Tangerine';
+    font-weight: 600;
+    animation-name: slidein;
+    animation-duration: 2s;
+    
+  }
+
+
+
+  .about, .projects, .skills, .contact, .hobbies {
+    padding: 30px 20px;
+    background-color: #e6bbb2;
+    margin: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    scroll-behavior: smooth;
+    animation-name: slidein;
+    animation-duration:3s;
+  }
+
+
+  .file-list {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.file-list li {
+    margin-bottom: 5px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.about img {
+    height: 50%;
+    width: 30%;
+    border-radius: 15px;
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+
+@keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
